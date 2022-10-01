@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js-objects</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article class="main-section">
+      <h1>Об'єкти у JavaScript</h1>
+      <div class="main-section-wrapper">
+        <div class="form-wrapper">
+          <form method="post" id="main-form">
+            <div>
+              <p class="field-label" id="name-label">Ім'я (прізвище, ім'я, по-батькові):</p>
+              <input class="input-text" id="name" type="text" name="pattern" />
+            </div>
+            <div>
+              <p class="field-label" id="position-label">Посада:</p>
+              <input class="input-text" id="position" type="text" name="pattern" />
+            </div>
+            <div>
+              <p class="field-label" id="education-label">Освіта:</p>
+              <input class="input-text" id="education" type="text" name="pattern" />
+            </div>
+            <div>
+              <p class="field-label" id="degree-label">Науковий ступінь:</p>
+              <input class="input-text" id="degree" type="text" name="pattern" />
+            </div>
+            <div>
+              <p class="field-label" id="salary-label">Заробітна плата:</p>
+              <input class="input-text" id="salary" type="number" min="0" step="0.01" name="pattern" />
+            </div>
+            <input class="submit-button" type="submit" value="Додати співробітника" />
+          </form>
+        </div>
+        <div class="result">
+          <p class="field-label">Підприємство:</p>
+          <div>
+            <span class="field-label">Назва:</span>
+            <span id="company-name"></span>
+          </div>
+          <div>
+            <span class="field-label">Вид діяльності:</span>
+            <span id="company-activity"></span>
+          </div>
+          <div>
+            <span class="field-label">Адреса:</span>
+            <span id="company-address"></span>
+          </div>
+          <div>
+            <span class="field-label">Кількість співробітників:</span>
+            <span id="company-workers"></span>
+          </div>
+          <p id="workers-info"></p>
+          <form method="post" id="find-worker-button">
+            <input class="submit-button" type="submit" value="Знайти співробітника з найбільшою премією" />
+          </form>
+          
+
+          <p id="result-worker"></p>
+        </div>
+      </div>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
